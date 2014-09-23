@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="firebaseApp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- build:css ./_assets/combined.css -->
+    <!--<link rel="stylesheet" type="text/css" href="./main.css" />-->
+    <!-- endbuild -->
+    <meta charset='UTF-8' />
+    <title>Countries & Capitals</title>
+</head>
+
+<body>
+
+    <section ng-controller="FireCtrl">
+        {{ myData.myData | json }}
+    </section>
+    <chat></chat>
+
+    <!-- build:js ./_assets/combined.js -->
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/firebase/firebase.js"></script>
+    <script src="./bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="./bower_components/firebase-simple-login/firebase-simple-login.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
